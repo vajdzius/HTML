@@ -9,9 +9,9 @@
  	    }
  	    .table-header
  	    {
- 	    	background: yellow; font-weight: 600; border-spacing: 0 text-align: center;
+ 	    	background: yellow; font-weight: 500; border-spacing: 0 text-align: center;
  	    }
       	.table-tr
      	{
-      		background: powderblue; font-weight: 600; border-spacing: 0 text-align: center;
+      		background: powderblue; font-weight: 500; border-spacing: 0 text-align: center;
        	}
