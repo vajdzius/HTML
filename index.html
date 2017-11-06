@@ -9,32 +9,63 @@
  Hello javascript
  </body>
  <script type="text/javascript">
- //alert('Hello javascript');
- //console.log(564);
- /*var name = "Vaidas";
+ /*var _do = {
+ 	"user_id": 1,
+ 	"name": "Vaidas",
+ 	"address": {
+ 		"country": "lt",
+ 		"street": "Laisvės al.",
+        "house": 3
+ 	}
+ };
+ var _da = ["lt", "en", "ru", "de", "pl", "lv"];
+ var _i = 0.15;
+ _i = _i + 1;
+ _i += 1;
+ _i++;
+ ++i;
 
- function greetUser (innerName, secondName)
+ for (var i = 0; i < _da.length; ++i)
  {
- console.log('Hello ', innerName, secondName);
- /*console.log(150, typeof 150);
- console.log(150.15, typeof 150.15);
- console.log([], typeof []);
- console.log({}, typeof {});
- console.log(true, typeof false);
- console.log(function, typeof function (){});
+    console.log(i, _da[i]);
  }
- greetUser(name, 'Makštutis');
+ _da.forEach (function (item)
+ {
+ 	console.log(item);
+ })
+ for (var prop in _do)
+ {
+ 	console.log(prop, _do[prop]);
+ }
  */
- function squareNumber(number, level)
- {
- 	console.log(number ** level);
- }
- squareNumber(5, 3);
+ var i = 0;
+ var fiveArray = [];
+ var amount = 10;
+ var step = 15;
+ /*while (fiveArray.length < amount){
 
-  function sumNumber(x, y)
- {
- 	console.log(x + y);
+    if (i % step === 0)
+	{
+		fiveArray.push(i);
+		fiveArray[fiveArray.length] = i;
+		console.log (i, true);
+
+	}
+
+	else
+	{
+		console.log (i, false);
+	}
+	i++;
+ 	i+= step;
  }
- sumNumber(5, 3);
+ 	console.log(fiveArray);*/
+ 	fiveArray = [];
+ 	i = 0;
+ 	 while (fiveArray.length < amount){
+ 	     fiveArray.push(i);
+ 	     i+=step;
+ 	 }
+ 	console.log(fiveArray);	
  </script>
- </html> 
+ </html>
