@@ -10,6 +10,8 @@
  </body>
  <script type="text/javascript">
 
+ 	var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
+ 	
  	var currentLanguageIndex = getLanguage();
 
  	function getLanguage()
@@ -17,6 +19,7 @@
     	var date = new Date();
     		date = date.getSeconds() % 10;
     		date = languages[date];
+
     	return date;
 
     }
@@ -39,6 +42,42 @@
 	else
 	{
 		console.log (i, false);
+ 	function greetUser()
+ 	{
+	 	var message = '...'
+	 	var callPolice = false;
+
+	 	switch (currentLanguageIndex)
+	 	{
+	 		case "en" :
+		 		message = "Hello world";
+		 		break;
+
+	 		case "lt" :
+		 		message = "Labas pasauli";
+		 		break;
+
+	 		case "de" :
+		 		message = "Hallo Welt";
+		 		break;
+
+	 		case "ru" :
+	 			callPolice = true;
+
+		 	case "ee" :
+		 		callPolice = false;
+
+		 	case "lv" :
+
+		 		message = "Привет мир";
+		 		break;
+
+	 		default :
+
+		 		message = '...'
+	 	}
+
+	 	console.log(currentLanguageIndex, message, callPolice);
 	}
 	i++;
  	i+= step;
@@ -51,5 +90,6 @@
  	     i+=step;
  	 }
  	console.log(fiveArray);	
+ 	greetUser();
  </script>
  </html>
