@@ -9,48 +9,32 @@
  Hello javascript
  </body>
  <script type="text/javascript">
- /*var _do = {
- 	"user_id": 1,
- 	"name": "Vaidas",
- 	"address": {
- 		"country": "lt",
- 		"street": "Laisvės al.",
-        "house": 3
- 	}
- };
- var _da = ["lt", "en", "ru", "de", "pl", "lv"];
- var _i = 0.15;
- _i = _i + 1;
- _i += 1;
- _i++;
- ++i;
 
- for (var i = 0; i < _da.length; ++i)
- {
-    console.log(i, _da[i]);
- }
- _da.forEach (function (item)
- {
- 	console.log(item);
- })
- for (var prop in _do)
- {
- 	console.log(prop, _do[prop]);
- }
- */
- var i = 0;
- var fiveArray = [];
- var amount = 10;
- var step = 15;
- /*while (fiveArray.length < amount){
+ 	var currentLanguageIndex = getLanguage();
 
-    if (i % step === 0)
-	{
-		fiveArray.push(i);
-		fiveArray[fiveArray.length] = i;
-		console.log (i, true);
+ 	function getLanguage()
+    {
+    	var date = new Date();
+    		date = date.getSeconds() % 10;
+    		date = languages[date];
+    	return date;
 
-	}
+    }
+
+   function greetUser ()
+   {
+   		if (currentLanguageIndex === "en")
+   		console.log ("Hello world!");
+   		else if (currentLanguageIndex === "lt")
+   		{
+   		console.log ("Labas pasauli!");
+   		}
+   		else 
+   		{
+    	console.log ("...");
+   		}
+   }
+  greetUser();
 
 	else
 	{
