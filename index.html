@@ -11,75 +11,43 @@
  <script type="text/javascript">
 
  	var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
- 	
- 	var currentLanguageIndex = getLanguage();
 
- 	function getLanguage()
-    {
-    	var date = new Date();
-    		date = date.getSeconds() % 10;
-    		date = languages[date];
+//TODO fill missing languages
+	var translations = [
 
-    	return date;
+		"Hello world",
+		"Labas pasauli",
+		"Hallo Welt",
+		"Привет мир",
+		"Tere, Maailm",
+		"Sveika pasaule",
+		"Witaj świecie",
+		"Hola Mundo",
+		"Bonjour le monde",
+		"Ciao mondo",
 
-    }
+	]
 
-   /*function greetUser ()
-   {
-   		if (currentLanguageIndex === "en")
-   		console.log ("Hello world!");
-   		else if (currentLanguageIndex === "lt")
-   		{
-   		console.log ("Labas pasauli!");
-   		}
-   		else 
-   		{
-    	console.log ("...");
-   		}
-   }
-  greetUser();
+    var currentLanguageIndex = getLanguage();
+	var currentLanguageTranslation = getTranslations ();
 
-	else
+    function getLanguage()
 	{
-		console.log (i, false);
-	}*/
- 	function greetUser()
- 	{
-	 	var message = '...'
-	 	var callPolice = false;
+		var date = new Date();
+			date = date.getSeconds() % 10;
+		 	date = languages[date];
 
-	 	switch (currentLanguageIndex)
-	 	{
-	 		case "en" :
-		 		message = "Hello world";
-		 		break;
-
-	 		case "lt" :
-		 		message = "Labas pasauli";
-		 		break;
-
-	 		case "de" :
-		 		message = "Hallo Welt";
-		 		break;
-
-	 		case "ru" :
-	 			callPolice = true;
-
-		 	case "ee" :
-		 		callPolice = false;
-
-		 	case "lv" :
-
-		 		message = "Привет мир";
-		 		break;
-
-	 		default :
-
-		 		message = '...'
-	 	}
-
-	 	console.log(currentLanguageIndex, message, callPolice);
+	 	return date;
 	}
- 	greetUser();
+
+	function getTranslations()
+	{
+		var date = new Date();
+			date = date.getSeconds() % 10;
+		 	date = translations[date];
+
+	 	return date;
+	}
+		 console.log(currentLanguageIndex, currentLanguageTranslation);	
  </script>
  </html>
